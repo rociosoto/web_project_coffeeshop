@@ -13,7 +13,6 @@
     href="https://fonts.googleapis.com/css2?family=Inter&family=Noto+Serif&display=swap"
     rel="stylesheet"
     />
-    <link rel="stylesheet" href="./vendor/normalize.css" />
     <link rel="stylesheet" href="./pages/index.css" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
 </head>
@@ -108,7 +107,73 @@
             </div>
           </div> 
         </section>
-        <section class="reservation" id="reservation"> </section>
+       <section class="reservation" id="reservation">
+          <h2 class="reservation__title">Reservar una mesa</h2>
+          <form action="#" class="form reservation__form">
+            <fieldset class="form__fieldset">
+              <label class="form__lable" for="name">Nombre *</label>
+              <input
+                class="form__input"
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Nombre"
+                required
+              />
+              <label class="form__lable" for="diners-numbers"
+                >Número de comensales *</label
+              >
+              <input
+                class="form__input"
+                type="number"
+                id="diners-numbers"
+                name="diners-numbers"
+                min="1"
+                max="8"
+                placeholder="1-8"
+                required
+              />
+              <label class="form__lable" for="dtate">Fecha y hora *</label>
+              <input
+                class="form__input"
+                type="datetime-local"
+                id="dtate"
+                name="dtate"
+                required
+              />
+              <label class="form__lable" for="email"
+                >Tu correo electrónico *</label
+              >
+              <input
+                class="form__input"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="email@email.com"
+                required
+              />
+            </fieldset>
+            <fieldset class="form__fieldset">
+              <button class="form__button" type="submit">
+                Reservar una mesa
+              </button>
+            </fieldset>
+            <fieldset class="form__fieldset form__fieldset_el_center">
+              <input
+                class="form__checkbox"
+                type="checkbox"
+                id="checkbox"
+                name="checkbox"
+                required
+              />
+              <label
+                class="form__lable form__lable_direction_right"
+                for="checkbox"
+                >Acepto los términos de uso *</label
+              >
+            </fieldset>
+          </form>
+        </section>
       </main>
       <footer class="footer" id="footer">
       </footer>
